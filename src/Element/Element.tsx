@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     table: {
         display: 'flex',
         flexDirection: 'row',
-        justifyContent: 'space-evenly',
+        justifyContent: 'space-between',
     },
     text: {
         color: '#fff',

@@ -34,7 +34,7 @@ const categories: Category[] = [
         materials: [
             'Cajas en general (packaging de delivery de comida sin grasa ni aceite)',
             'Maple de huevos',
-            'Bandejas de comida',
+            'Bandejas de comida de cartón',
             'Cilindro de papel higiénico y de cocina',
             'Cartón corrugado',
         ],
@@ -56,7 +56,7 @@ const categories: Category[] = [
             'Latas de refrescos como gaseosas, cervezas y jugos',
             'Desodorantes corporales, papel aluminio',
             'Laminas para cerrar yogures',
-            'Bandejas de comida',
+            'Bandejas de comida de aluminio',
         ],
     },
     {
