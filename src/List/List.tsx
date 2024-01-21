@@ -1,12 +1,21 @@
-import { StyleSheet, View } from 'react-native';
+import { FlatList, StyleSheet, Text, View } from 'react-native';
 import { Material } from '../materials';
+import Element from '../Element/Element';
 
 type Props = {
     list: Material[];
 };
 
 const List = ({ list }: Props) => {
-    return <View></View>;
+    return (
+        <View>
+            <FlatList
+                data={list}
+                renderItem={({ item }) => <Element material={item} />}
+                keyExtractor={(item) => item.material}
+            ></FlatList>
+        </View>
+    );
 };
 
 const styles = StyleSheet.create({});

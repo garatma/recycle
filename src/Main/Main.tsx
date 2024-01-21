@@ -17,8 +17,6 @@ const Main = () => {
         );
     });
 
-    console.log({ filteredList });
-
     return (
         <View>
             <SearchBar term={term} onTermChange={setTerm} />
