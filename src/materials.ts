@@ -1,9 +1,14 @@
-type Material = {
+type Category = {
     title: string;
     materials: string[];
 };
 
-const data: Material[] = [
+export type Material = {
+    material: string;
+    category: string;
+};
+
+const categories: Category[] = [
     {
         title: 'Vidrio',
         materials: ['Botellas', 'Frascos'],
@@ -18,15 +23,21 @@ const data: Material[] = [
     },
 ];
 
-export const getReverseData = () => {
-    return data.map(({ materials, title }) => {
-        return materials.map((material) => {
-            return {
-                title: material,
-                materials: [title],
-            };
-        });
-    });
+export const getCategories = () => {
+    return categories;
 };
 
-export default data;
+export const getMaterials = () => {
+    const materialsArray: Material[] = [];
+
+    categories.forEach(({ materials, title }) => {
+        materials.forEach((material) => {
+            materialsArray.push({
+                material,
+                category: title,
+            });
+        });
+    });
+
+    return materialsArray;
+};

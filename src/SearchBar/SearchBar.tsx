@@ -1,13 +1,12 @@
 import { useState } from 'react';
 import { StyleSheet, Text, TextInput, View } from 'react-native';
 
-const SearchBar = () => {
-    const [term, setTerm] = useState('');
+type Props = {
+    term: string;
+    onTermChange: (text: string) => void;
+};
 
-    const onTermChange = (text: string) => {
-        setTerm(text);
-    };
-
+const SearchBar = ({ term, onTermChange }: Props) => {
     return (
         <View>
             <TextInput

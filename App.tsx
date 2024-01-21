@@ -1,12 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import SearchBar from './src/SearchBar/SearchBar';
+import Main from './src/Main/Main';
 
 const App = () => {
     return (
         <View style={styles.container}>
             <StatusBar style="light" />
-            <SearchBar />
+            <Main />
         </View>
     );
 };

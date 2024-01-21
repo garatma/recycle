@@ -1,6 +1,11 @@
 import { StyleSheet, View } from 'react-native';
+import { Material } from '../materials';
 
-const List = () => {
+type Props = {
+    list: Material[];
+};
+
+const List = ({ list }: Props) => {
     return <View></View>;
 };
 
