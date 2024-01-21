@@ -9,10 +9,20 @@ const Main = () => {
 
     const list = getMaterials();
 
+    const filteredList = list.filter(({ material, category }) => {
+        // TODO: remove accents (áéíóú) from term and list
+        return (
+            material.toLowerCase().includes(term.toLowerCase()) ||
+            category.toLowerCase().includes(term.toLowerCase())
+        );
+    });
+
+    console.log({ filteredList });
+
     return (
         <View>
             <SearchBar term={term} onTermChange={setTerm} />
-            <List list={list} />
+            <List list={filteredList} />
         </View>
     );
 };

@@ -13,7 +13,7 @@ const SearchBar = ({ term, onTermChange }: Props) => {
                 style={styles.text}
                 onChangeText={onTermChange}
                 value={term}
-                placeholder="Buscá un material"
+                placeholder="Busca un material"
                 placeholderTextColor="#777"
             />
         </View>
