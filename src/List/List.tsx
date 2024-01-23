@@ -13,6 +13,8 @@ const List = ({ list }: Props) => {
                 data={list}
                 renderItem={({ item }) => <Element material={item} />}
                 keyExtractor={(item) => item.material}
+                showsHorizontalScrollIndicator={false}
+                showsVerticalScrollIndicator={false}
             ></FlatList>
         </View>
     );
