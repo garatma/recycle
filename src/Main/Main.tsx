@@ -18,13 +18,18 @@ const Main = () => {
     });
 
     return (
-        <View>
+        <View style={styles.main}>
             <SearchBar term={term} onTermChange={setTerm} />
             <List list={filteredList} />
         </View>
     );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+    main: {
+        minWidth: '95%',
+        paddingBottom: 380,
+    },
+});
 
 export default Main;

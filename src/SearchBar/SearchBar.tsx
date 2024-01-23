@@ -8,7 +8,7 @@ type Props = {
 
 const SearchBar = ({ term, onTermChange }: Props) => {
     return (
-        <View>
+        <View style={styles.searchBar}>
             <TextInput
                 style={styles.text}
                 onChangeText={onTermChange}
@@ -23,7 +23,12 @@ const SearchBar = ({ term, onTermChange }: Props) => {
 const styles = StyleSheet.create({
     text: {
         color: '#fff',
+        borderWidth: 1,
+        borderColor: '#aaa7a7',
+        borderRadius: 5,
+        fontSize: 15,
     },
+    searchBar: { paddingTop: 170, paddingBottom: 30 },
 });
 
 export default SearchBar;
