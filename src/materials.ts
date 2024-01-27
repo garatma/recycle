@@ -157,7 +157,7 @@ const categories: Category[] = [
         ],
     },
     {
-        title: 'Colillas de Cigarrillos',
+        title: 'Cigarrillos',
         materials: ['Colillas de Cigarrillos'],
         howto: 'Separar un envase, como por ejemplo una botella, donde unicamente tires ahí las colillas de cigarrillos. Juntalos todos ahí, secos y una vez que llenes la botella entera podes llevarla al punto',
     },

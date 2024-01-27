@@ -1,22 +1,25 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import Main from './src/Main/Main';
+import { PaperProvider } from 'react-native-paper';
 
 const App = () => {
     return (
-        <View style={styles.container}>
-            <StatusBar style="light" />
-            <Main />
-        </View>
+        <PaperProvider>
+            <View style={styles.container}>
+                <StatusBar style="light" />
+                <Main />
+            </View>
+        </PaperProvider>
     );
 };
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#333',
         alignItems: 'center',
         justifyContent: 'center',
+        backgroundColor: '#699ba0',
     },
     text: {
         color: '#fff',

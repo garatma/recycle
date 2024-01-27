@@ -14,7 +14,8 @@ const SearchBar = ({ term, onTermChange }: Props) => {
                 onChangeText={onTermChange}
                 value={term}
                 placeholder="Busca un material"
-                placeholderTextColor="#777"
+                placeholderTextColor="#444"
+                autoFocus
             />
         </View>
     );
@@ -23,12 +24,16 @@ const SearchBar = ({ term, onTermChange }: Props) => {
 const styles = StyleSheet.create({
     text: {
         color: '#fff',
-        borderWidth: 1,
-        borderColor: '#aaa7a7',
+        borderWidth: 2,
+        borderColor: '#000000',
+        textDecorationColor: '#000000',
         borderRadius: 5,
         fontSize: 15,
     },
-    searchBar: { paddingTop: 170, paddingBottom: 30 },
+    searchBar: {
+        paddingTop: 20,
+        marginBottom: 20,
+    },
 });
 
 export default SearchBar;

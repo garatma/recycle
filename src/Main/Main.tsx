@@ -19,16 +19,18 @@ const Main = () => {
 
     return (
         <View style={styles.main}>
-            <SearchBar term={term} onTermChange={setTerm} />
             <List list={filteredList} />
+            <SearchBar term={term} onTermChange={setTerm} />
         </View>
     );
 };
 
 const styles = StyleSheet.create({
     main: {
-        minWidth: '95%',
-        paddingBottom: 380,
+        width: '95%',
+        flex: 1,
+        justifyContent: 'center',
+        alignContent: 'center',
     },
 });
 
